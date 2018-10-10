@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaJam Coffee House</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<img src="img/header.jpg">
+		</header>
+		<div class="row">
+			<div class="col-left">
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="music.html">Music</a></li>
+						<li><a href="jobs.html">Jobs</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-right">
+				<div class="content">
+					<h2>Music at JavaJam</h2>
+					<p>
+						Want to work at JavaJam? Fill out the form below to start your application. Required fields are marked with an asterisk *
+					</p>
+					<form id="job-application" form class="job-application" action="php/show_get.php">
+						<label>*Name:</label>
+						<input id="job-name" input type="text" name="name"required/>
+						<label>*E-Mail:</label>
+						<input id="job-email" input type="email" name="email" required/>
+						<label>Start Date:</label>
+						<input id="job-date"type="date" name="start" required/>
+						<label>*Experience:</label>
+						<textarea id="job-experience" name="experience" required ></textarea>
+						<input class="btn-submit" type="submit" value="Apply Now">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			Copyright &copy; 2014 JavaJam Coffee House
+			<br>
+			<a href="mailto:muha_0217@e.ntu.edu.sg">muha_0217@e.ntu.edu.sg</a>
+		</footer>
+	</div>
+	<script type="text/javascript" src="js/jobs.js"></script>
+</body>
+</html>
+
+
